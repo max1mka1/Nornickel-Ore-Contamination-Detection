@@ -1,0 +1,19 @@
+# Nornickel dataset https://www.kaggle.com/c/nornikel-ore-contamination-detection
+# Train command: python train.py --data Nornickel.yaml
+# Default dataset location is next to YOLOv5:
+#   /parent
+#     /datasets/Nornickel
+#     /yolov5
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ../datasets/Nornickel  # dataset root dir
+# images (relative to 'path')
+train: images/train  # train 1652 images
+val: images/valid  # val 189 images
+test: images/test  # test 188 images
+
+# Classes
+nc: 3  # number of classes
+names: ['other', 'armature', 'wood']  # class names  # ['armature', 'wood', 'other'] -> ['other', 'armature', 'wood']
+# ['other', 'armature', 'wood']
